@@ -5,7 +5,7 @@ import ButtonType2 from './ui/buttonType2'
 
 const Competitions = () => {
   return (
-    <div className='py-20'>
+    <div className='py-20' id="competitions">
         <h1 className='heading'> 
             <span className='text-purple'>Competitions</span>
             {' '} I took part in

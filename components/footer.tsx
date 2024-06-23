@@ -17,7 +17,7 @@ const contacts = [
 
 const Footer = () => {
   return (
-    <div className='flex flex-col items-center'>
+    <div className='flex flex-col items-center' id="contactme">
         <h1 className='heading lg:max-w-[45vw]'>
             My <span className='text-purple' >Contacts </span> Below
         </h1>

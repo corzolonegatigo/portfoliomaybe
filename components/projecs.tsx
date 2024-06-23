@@ -8,7 +8,7 @@ import Button from './ui/button'
 const Projects = () => {
 
   return (
-    <div className='py-20'>
+    <div className='py-20' id="projects" >
         <h1 className='heading'> 
             These are some of my {' '}
             <span className='text-purple'>Projects</span>
