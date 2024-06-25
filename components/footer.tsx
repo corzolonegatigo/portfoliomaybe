@@ -28,7 +28,7 @@ const Footer = () => {
           {contacts.map((info) => (
             <div
               key={info.id}
-              className="w-20 h-20 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300">
+              className="w-20 h-20 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300 transition-transform hover:scale-105">
               <a href={info.link}>{info.img}</a>
             </div>
           ))}
