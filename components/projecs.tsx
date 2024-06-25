@@ -18,14 +18,16 @@ const Projects = () => {
                 <div key={id} className='lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw] sm:h-[41rem] h-[32rem]'>
                     
                     <PinContainer title={opt} href = {link}>
+                        <a href={link} target="_blank">
                         <div className='relative flex items-center justify-center sm:w-[500px] w-[80vw] sm:h-[40vh] h-[25vh] overflow-hidden lg:h-[50vh]'>
                             <div className='relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]'>
 
-                                <img src={"/bg.png"} alt={"bg-img"}/>     
+                                    <img src={"/bg.png"} alt={"bg-img"}/>     
                                 
                             </div>
-                            <img src={img} alt={title} className='z-10 absolute bottom-0'/>
+                            <img src={img} alt={title} className='z-10 absolute bottom-0'></img> 
                         </div>
+                        </a>
                         <a href={link}>
                         <h1 className='font-semibold lg:text-xl md:text-l text-base line-clamp-1 text-center pt-3 pb-1'> 
                             {title}
@@ -49,7 +51,7 @@ const Projects = () => {
                                 </div>
                             ))}
                             </div>
-                            {id === 3 && (
+                            {id != 1 && (
                                 <div className='flex justify-center items-center'>
                                     <a className='flex lg:text-normal md:text-xs text-sm font-semibold text-purple fill-slate-500 text-center'
                                     href={link}
@@ -59,14 +61,7 @@ const Projects = () => {
                                     <FaLocationArrow className='ms-3' color='#CBACF9'/>
                                 </div>
                             )}
-                            {id === 4 && (
-                                <div className='flex justify-center items-center'>
-                                    <p className='flex lg:text-normal md:text-xs text-sm font-semibold text-purple fill-slate-500 text-center'>
-                                        Click to learn more!
-                                    </p>
-                                    <FaLocationArrow className='ms-3' color='#CBACF9'/>
-                                </div>
-                            )}
+
                             
                             </div>
 
@@ -77,7 +72,7 @@ const Projects = () => {
                 </div>
 
             ))}
-            <h1 className='heading text-black-100'>
+            <h1 className='lg:heading md:4xl sm:2xl text-black-100'>
                 filler filler filler filler filler filler filler filler filller filler filler filler filler filler filler filler filler filler filler filler filler
             </h1>
             <Button 
