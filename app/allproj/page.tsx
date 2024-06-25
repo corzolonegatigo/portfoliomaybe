@@ -15,7 +15,7 @@ export default function Home() {
         </h1>
         < AllProjects/>
         <ButtonType2
-                className="h-[4.5rem] w-[20rem] text-center items-center justify-center py-5 text-xl" 
+                className="h-[4.5rem] w-[20rem] text-center items-center justify-center pt-[1.4rem] text-xl" 
                 link="/"
                 text="Return Home"
                 />
