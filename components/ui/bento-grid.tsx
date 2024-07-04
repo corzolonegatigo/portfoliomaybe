@@ -35,6 +35,7 @@ export const BentoGridItem = ({
   imgClassName,
   titleClassName,
   spareImg,
+  link,
 }: {
   className?: string;
   id: number;
@@ -44,6 +45,7 @@ export const BentoGridItem = ({
   imgClassName?: string;
   titleClassName?: string;
   spareImg?: string;
+  link?: string;
 }) => {
   const leftLists = ["ReactJS", "Typescript", "Python"];
   const rightLists = ["Video Editing", "Figma", "3D Modelling"];
@@ -144,12 +146,12 @@ export const BentoGridItem = ({
           )}
           >{id == 1 && (
             <div className="font-sans md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10 font-semibold">
-              {description}
+              <a href={link}>{description}</a>
             </div>
           )}
           {id != 1 && (
             <div className="font-sans font-extralight md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
-              {description}
+              <a href={link}>{description}</a>
             </div>
           )}
           
@@ -157,14 +159,14 @@ export const BentoGridItem = ({
             <div
             className={`font-sans text-lg lg:text-3xl max-w-[15rem] font-bold z-10`}
           >
-            {title}
+            <a href={link}> {title} </a>
           </div>
           )}
           {id != 2 && (
             <div
             className={`font-sans text-lg lg:text-3xl max-w-[30rem] font-bold z-10`}
           >
-            {title}
+             <a href={link}> {title} </a>
           </div>
           )}
         </div>
