@@ -19,6 +19,7 @@ export const gridItems = [
     titleClassName: "justify-end drop-shadow-md text-white",
     img: "/biiPortfolio.jpeg",
     spareImg: "",
+    link:"#about"
   },
   {
     id: 2,
@@ -29,6 +30,7 @@ export const gridItems = [
     titleClassName: "justify-start",
     img: "",
     spareImg: "",
+    link:""
   },
   {
     id: 3,
@@ -39,6 +41,7 @@ export const gridItems = [
     titleClassName: "justify-center",
     img: "",
     spareImg: "",
+    link:"#contactme",
   },
 ];
 
